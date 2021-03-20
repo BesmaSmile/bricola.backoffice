@@ -1,0 +1,52 @@
+.Admins{
+  & .adm-adminCell{
+    font-size: 14px;
+    color: var(-stronggrey)
+  }
+  & .adm-dateCell{
+    font-size: 12px;
+    font-weight: 300;
+    color: var(--stronggrey)
+  }
+  & .adm-enableButton, .adm-disableButton{
+    &.MuiButton-outlined{
+      width: 80px;
+      height: 25px;
+      font-size: 12px;
+      text-transform : none;
+      line-height: normal;
+      padding: 5px 10px;
+      & .MuiButton-label{
+        font-weight: 500;
+        white-space: nowrap;
+      }
+    }
+    &.Mui-disabled{
+      opacity: 0.6;
+    }
+  }
+  & .adm-enableButton.MuiButton-outlined{
+    border-color: var(--green);
+    & .MuiButton-label{
+      color: var(--green);
+    }
+    &:hover{
+      background-color: var(--green);
+      & .MuiButton-label{
+        color: var(--white);
+      }
+    }
+  }
+  & .adm-disableButton.MuiButton-outlined{
+    border-color: var(--red);
+    & .MuiButton-label{
+      color: var(--red);
+    }
+    &:hover{
+      background-color: var(--red);
+      & .MuiButton-label{
+        color: var(--white);
+      }
+    }
+  }
+}

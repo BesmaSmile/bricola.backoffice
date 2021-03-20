@@ -1,0 +1,73 @@
+.Clients{
+  & .clt-clientCell{
+    font-size: 14px;
+    color: var(-stronggrey)
+  }
+  & .clt-dateCell{
+    font-size: 12px;
+    font-weight: 300;
+    color: var(--stronggrey)
+  }
+  & .clt-detailContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    
+    & .clt-datailTop{
+      margin-right: 10px;
+      display: flex;
+      align-items: center;
+      & svg{
+        width: 15px;
+        height: 15px;
+      }      
+    }
+    & .MuiCircularProgress-root{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: var(--main)
+    }
+  }
+  & .clt-enableButton, .clt-disableButton{
+    &.MuiButton-outlined{
+      width: 80px;
+      height: 25px;
+      font-size: 12px;
+      text-transform : none;
+      line-height: normal;
+      padding: 5px 10px;
+      & .MuiButton-label{
+        font-weight: 500;
+        white-space: nowrap;
+      }
+    }
+    &.Mui-disabled{
+      opacity: 0.6;
+    }
+  }
+  & .clt-enableButton.MuiButton-outlined{
+    border-color: var(--green);
+    & .MuiButton-label{
+      color: var(--green);
+    }
+    &:hover{
+      background-color: var(--green);
+      & .MuiButton-label{
+        color: var(--white);
+      }
+    }
+  }
+  & .clt-disableButton.MuiButton-outlined{
+    border-color: var(--red);
+    & .MuiButton-label{
+      color: var(--red);
+    }
+    &:hover{
+      background-color: var(--red);
+      & .MuiButton-label{
+        color: var(--white);
+      }
+    }
+  }
+}

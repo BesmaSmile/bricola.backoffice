@@ -1,0 +1,62 @@
+.Reclamations{
+  & .rcl-reclamationCell{
+    font-size: 14px;
+    color: var(-stronggrey)
+  }
+  & .rcl-smallText{
+    font-size: 12px;
+    font-weight: 300;
+    color: var(--stronggrey)
+  }
+  & .rcl-comment{
+    max-width: 150px;
+    & p{
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+    & svg{
+      font-size: 14px;
+      padding: 0;
+      margin-bottom: -2px;
+      margin-left: 10px;
+      fill: var(--blue);
+    }
+  }
+  & .rcl-closeButton{
+    &.MuiButton-outlined{
+      width: 80px;
+      height: 25px;
+      font-size: 12px;
+      text-transform : none;
+      line-height: normal;
+      padding: 5px 10px;
+      border-color: var(--green);
+      & .MuiButton-label{
+        color: var(--green);
+        font-weight: 500;
+        white-space: nowrap;
+      }
+      &:hover{
+        background-color: var(--green);
+        & .MuiButton-label{
+          color: var(--white);
+        }
+      }
+    }
+    &.Mui-disabled{
+      opacity: 0.6;
+    }
+  }
+}
+
+.rcl-commetnsView{
+  & .rcl-commentDate{
+    min-width: 95px;
+  }
+  & .rcl-commentContent{
+    border: 1px solid var(--main);
+    background-color: rgba(90, 242, 250, 0.062);
+    border-radius: 10px;
+  }
+}

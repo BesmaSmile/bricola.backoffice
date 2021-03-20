@@ -1,0 +1,83 @@
+.Partners{
+  & .ptn-partnerCell{
+    font-size: 14px;
+    color: var(-stronggrey)
+  }
+  & .ptn-smallCell{
+    font-size: 12px;
+    font-weight: 300;
+    color: var(--stronggrey)
+  }
+  & .ptn-lateText{
+    font-weight: bold;
+    color: var(--red);
+  }
+  & .ptn-total{
+    border: 0.5px solid var(--lightblue);
+    border-radius: 7px;
+    padding: 0 20px;
+    margin: 0 10px;
+  }
+  & .ptn-detailContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    
+    & .ptn-datailTop{
+      margin-right: 10px;
+      display: flex;
+      align-items: center;
+      & svg{
+        width: 15px;
+        height: 15px;
+      }      
+    }
+    & .MuiCircularProgress-root{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: var(--main)
+    }
+  }
+  & .ptn-enableButton, .ptn-disableButton{
+    &.MuiButton-outlined{
+      width: 80px;
+      height: 25px;
+      font-size: 12px;
+      text-transform : none;
+      line-height: normal;
+      padding: 5px 10px;
+      & .MuiButton-label{
+        font-weight: 500;
+        white-space: nowrap;
+      }
+    }
+    &.Mui-disabled{
+      opacity: 0.6;
+    }
+  }
+  & .ptn-enableButton.MuiButton-outlined{
+    border-color: var(--green);
+    & .MuiButton-label{
+      color: var(--green);
+    }
+    &:hover{
+      background-color: var(--green);
+      & .MuiButton-label{
+        color: var(--white);
+      }
+    }
+  }
+  & .ptn-disableButton.MuiButton-outlined{
+    border-color: var(--red);
+    & .MuiButton-label{
+      color: var(--red);
+    }
+    &:hover{
+      background-color: var(--red);
+      & .MuiButton-label{
+        color: var(--white);
+      }
+    }
+  }
+}

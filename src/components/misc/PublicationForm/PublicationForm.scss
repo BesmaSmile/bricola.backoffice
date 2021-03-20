@@ -1,0 +1,15 @@
+.PublicationForm{
+  & .pf-imgContainer{
+    position: relative;
+    border-radius: 10px;
+    border: 0.6px solid var(--lightgrey);
+    & .pf-image {
+      object-fit: cover;
+      width: 300px;
+      height: 200px;
+    }
+  }
+  & .pf-imgIcon{
+    font-size: 40px
+  }
+}

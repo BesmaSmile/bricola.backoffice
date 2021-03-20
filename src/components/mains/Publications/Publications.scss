@@ -1,0 +1,30 @@
+.Publications{
+  & .pbl-dateCell{
+    font-size: 1Rpx;
+    font-weight: 300;
+    color: var(--stronggrey);
+    margin-bottom: 10px;
+  }
+  & .pbl-imageContainer {
+    position: relative;
+    width: fit-content;
+    & .pbl-image{
+      object-fit: cover;
+      width: 600px;
+      height: 400px;
+      border-radius: 5px;
+    }
+    & .MuiIconButton-root{
+      background-color:rgba(gainsboro, .7);
+      color: var(--stronggrey) !important;
+      position: absolute;
+      right: -3px;
+      top: -10px;
+      z-index: 10;
+      &:hover{
+        background-color: var(--lightgrey);
+        box-shadow: 0px 0px 3px 0px var(--grey);
+      }
+    }
+  }
+}

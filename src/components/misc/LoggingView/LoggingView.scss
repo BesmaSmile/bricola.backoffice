@@ -1,0 +1,12 @@
+.LoggingView{
+  min-height: 70vh;
+  & .lg-loggingCell{
+    font-size: 14px;
+    color: var(-stronggrey)
+  }
+  & .lg-smallCell{
+    font-size: 12px;
+    font-weight: 300;
+    color: var(--stronggrey)
+  }
+}

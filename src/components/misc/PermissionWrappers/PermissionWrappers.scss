@@ -1,0 +1,20 @@
+.PageWrapper{
+  min-height: 75vh;
+  & .pw-iconContainer {
+    position: relative;
+    
+    & .pw-largIcon{
+      font-size: 120px;
+      color: var(--red);
+    }
+    & .pw-smallIcon {
+      position: absolute;
+      bottom : 5px;
+      right:5px;
+      font-size: 50px;
+      background-color: var(--white);
+      border-radius: 50%;
+      color: var(--red);
+    }
+  }
+}

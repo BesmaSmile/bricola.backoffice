@@ -1,0 +1,39 @@
+.ServiceForm{
+  & .sf-imgContainer{
+    position: relative;
+    border-radius: 10px;
+    border: 0.6px solid var(--lightgrey);
+    & .sf-image {
+      object-fit: cover;
+      width: 150px;
+      height: 150px;
+    }
+  }
+  & .sf-iconContainer{
+    position: relative;
+    border-radius: 50%;
+    border: 0.6px solid var(--lightgrey);
+    background-color: var(--stronggrey);
+    box-shadow: 0px 0px 3px 0px var(--grey);
+    & .sf-icon {
+      border-radius: 0;
+      object-fit: cover;
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  & .sf-imgIcon{
+    font-size: 40px
+  }
+
+  & .MuiIconButton-sizeSmall{
+    height: 25px;
+    width: 25px;
+    color: var(--main);
+    & svg{
+      width: 18px;
+      height: 18px;
+    }
+  }
+}

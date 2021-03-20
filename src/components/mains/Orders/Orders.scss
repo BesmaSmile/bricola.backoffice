@@ -1,0 +1,51 @@
+.Orders{
+  & .ord-orderCell{
+    font-size: 14px;
+    color: var(-stronggrey)
+  }
+  & .ord-smallText{
+    font-size: 12px;
+    font-weight: 300;
+    color: var(--stronggrey)
+  }
+}
+
+.OrderDetails{
+  & .ord-container{
+    border: 1px solid var(--grey);
+    border-radius: 5px;
+    margin: 10px 0px;
+    &>div{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+  & .ord-title{
+    color: var(--stronggrey);
+    font-weight: 500;
+    font-size: 12px;
+  }
+
+  & .ord-big-title{
+    color: var(--stronggrey);
+    font-weight: 500;
+    font-size: 20px;
+  }
+
+  & .ord-content{
+    color: var(--dark);
+    font-weight: 300;
+  }
+
+  & .ord-big-content{
+    color: var(--dark);
+    font-weight:bold;
+    font-size: 20px;
+  }
+
+  & .ord-container{
+    flex: 1;
+  }
+}

@@ -1,0 +1,5 @@
+export const companyConstants = {
+  GET_COMPANIES : 'GET_COMPANIES',
+  ADD_COMPANY : 'ADD_COMPANY',
+  UPDATE_COMPANY : 'UPDATE_COMPANY'
+}

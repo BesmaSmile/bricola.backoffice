@@ -1,0 +1,33 @@
+.ImageUploader{
+  border-radius: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  label, label>img {
+    border-radius:inherit;
+  }
+  & .MuiIconButton-root{
+    background-color:rgba(gainsboro, .7);
+    color: var(--stronggrey) !important;
+    position: absolute;
+    right: -5px;
+    top: -5px;
+    z-index: 10;
+    &:hover{
+      background-color: var(--lightgrey);
+      box-shadow: 0px 0px 3px 0px var(--grey);
+    }
+  }
+  .Mui-disabled.MuiIconButton-root{
+    background-color: var(--lightgrey);
+    color: var(--stronggrey);
+  }
+  & .imgup-mask{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.4);
+  }
+}

@@ -1,0 +1,40 @@
+.Dashboard{
+  & .db-chartContainer{
+    box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.3);
+    border-radius: 5px;
+    margin: 10px;
+    padding: 20px;
+    & .MuiCircularProgress-root{
+      color: var(--white)
+    }
+    & .MuiSvgIcon-root{
+      font-size: 60px;
+      color : var(--white)
+    }
+  }
+  & .db-filterButton{
+    min-width: unset;
+    font-size: 12px;
+    text-transform : none;
+    line-height: normal;
+    margin-right: 10px;
+    border-radius: 5px;
+    width: 70px;
+    height: 80px;
+    & .db-filterButton_label{
+      color: var(--strongblue);
+      font-weight: 500;
+      white-space: nowrap;
+    }
+  }
+  & .MuiInputBase-root{
+    height: 50px;
+    width: 220px;
+    margin-right: 20px;
+  }
+
+  & .db-cardIcon svg{
+    width: 45px;
+    height: 45px;
+  }
+}
